@@ -11,3 +11,25 @@ function stringRemove(string) {
 
 console.log(stringRemove("racing"));
 
+/*
+"Alternative Solution":
+
+function removeChar(str){
+  return str.substring(1, str.length-1);
+};
+
+-------------------------------------------
+
+and another one, but this time using 'substr'
+
+function removeChar(str){
+  return str.substr(1, str.length-2);
+};
+
+"According to Mozilla MDN, the arguments of substring() represent the starting and ending indexes, while the arguments of substr() represent the starting index and the number of characters to include in the returned string."
+*/
+
+
+
+
+
