@@ -19,13 +19,12 @@ output = ["Open", "Open", "Senior", "Open", "Open", "Senior"]
 // My attempt
 function openOrSenior(data) {
   const memberList = [];
-  for (member in data) {
-    // if (member[0] >= 55 && member[1] > 7) {
-    //   memberList.push("Open");
-    // } else {
-    //   memberList.push("Senior");
-    // }
-    console.log(member);
+  for (let i = 0; i < data.length; i++) {
+    if (data[i][0] >= 55 && data[i][1] > 7) {
+      memberList.push("Senior");
+    } else {
+      memberList.push("Open");
+    }
   }
   return memberList;
 }
@@ -40,3 +39,10 @@ console.log(
     [78, 9],
   ])
 );
+
+// Better attempt
+
+const openSenior = (data) =>
+  data.map(([age, handicap]) =>
+    age >= 55 && handicap > 7 ? "Senior" : "Open"
+  );
