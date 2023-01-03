@@ -24,7 +24,7 @@ console.log(highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4"));
 
 // Solution
 
-// When sorting numbers, because unicode puts things alphabetically, you have to use a different function to
+// When sorting numbers, because unicode puts things alphabetically, you have to use a different function to sort numerically
 
 function highAndLow(numbers) {
   var arr = numbers.split(" ").sort(function (a, b) {

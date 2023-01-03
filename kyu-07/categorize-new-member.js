@@ -29,8 +29,48 @@ function openOrSenior(data) {
   return memberList;
 }
 
+// console.log(
+//   openOrSenior([
+//     [18, 20],
+//     [45, 2],
+//     [61, 12],
+//     [37, 6],
+//     [21, 21],
+//     [78, 9],
+//   ])
+// );
+
+// Better attempt
+
+const openSenior = (data) =>
+  data.map(([age, handicap]) =>
+    age >= 55 && handicap > 7 ? "Senior" : "Open"
+  );
+
+// Top answer on Codewars
+
+// Destructuring: [age, handicap] https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
+// Arrow Functions: () => {} https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
+
+function openOrSenior(data) {
+  return data.map(([age, handicap]) =>
+    age > 54 && handicap > 7 ? "Senior" : "Open"
+  );
+}
+
+// 1. Take the data array and map it to a new array
+// 2. While doing this, destructure the smaller arrays into sections that can be measured
+// 3. Use a ternary operator to evaluate age and handicap
+// 4. If both true, Senior is added to the array, else Open
+
+function isSenior(data) {
+  return data.map(([age, handicap]) =>
+    age >= 55 && handicap > 7 ? "Senior" : "Open"
+  );
+}
+
 console.log(
-  openOrSenior([
+  isSenior([
     [18, 20],
     [45, 2],
     [61, 12],
@@ -39,10 +79,3 @@ console.log(
     [78, 9],
   ])
 );
-
-// Better attempt
-
-const openSenior = (data) =>
-  data.map(([age, handicap]) =>
-    age >= 55 && handicap > 7 ? "Senior" : "Open"
-  );
