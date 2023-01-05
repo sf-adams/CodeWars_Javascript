@@ -1,7 +1,7 @@
 const findNeedle = require("./a-needle-in-the-haystack");
 
 // Testing from the
-test("finds the string 'needle' in array of strings", () => {
+test("Should find the string 'needle' in array of strings", () => {
   expect(
     findNeedle([
       "hay",
@@ -16,7 +16,7 @@ test("finds the string 'needle' in array of strings", () => {
 });
 
 // Basic test from the example given in
-test("finds the string 'needle' in mixed array", () => {
+test("Should find the string 'needle' in mixed array", () => {
   expect(
     findNeedle([
       "3",
@@ -34,7 +34,7 @@ test("finds the string 'needle' in mixed array", () => {
 });
 
 // Basic test from the example given in
-test("finds the string 'needle' in array of numbers with one string", () => {
+test("Should find the string 'needle' in array of numbers with one string", () => {
   expect(
     findNeedle([
       1,

@@ -9,6 +9,10 @@ function findNeedle(haystack) {
 
 module.exports = findNeedle;
 
-console.log(
-  findNeedle(["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"])
-);
+// Improved solution
+// Uses the `indexOf` method, which returns the first index at which a given element can be found in the array
+// In this example, there is only one instance
+
+function findNeedleSolution(haystack) {
+  return "found the needle at position " + haystack.indexOf("needle");
+}
