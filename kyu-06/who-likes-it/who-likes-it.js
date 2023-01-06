@@ -24,11 +24,7 @@ function likes(names) {
   }
 }
 
-console.log(likes([]));
-console.log(likes(["Peter"]));
-console.log(likes(["Jacob", "Alex"]));
-console.log(likes(["Max", "John", "Mark"]));
-console.log(likes(["Alex", "Jacob", "Mark", "Max", "Benjamin", "Cameron"]));
+module.exports = likes;
 
 // Solution using switch
 function likesSwitch(names) {
@@ -61,7 +57,7 @@ function likesSwitch(names) {
 // Genius solution
 
 // Returning an object, the value of which is determined by using the Math.min() function to choose the smaller of 4 and the length of the array
-function likes(names) {
+function likesSolution(names) {
   return {
     0: "no one likes this",
     1: `${names[0]} likes this`,
