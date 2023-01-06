@@ -1,0 +1,6 @@
+// This allows VSCode to provide autocomplete for Jest
+{
+  "typeAcquisition": {
+    "include": ["jest"]
+  }
+}
