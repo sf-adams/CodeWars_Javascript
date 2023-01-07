@@ -21,3 +21,29 @@ function setAlarm(employed, vacation) {
 }
 
 module.exports = setAlarm;
+
+/*
+
+Genius Solution
+- True is greater than false, because js compiles it to 1 or 0
+
+function setAlarm(employed, vacation){
+  return employed > vacation
+}
+
+---
+
+Best Practice Solution
+- Simple use of Logical Not/Negation Operator...
+
+function setAlarm(employed, vacation){
+  return employed && !vacation;
+}
+
+---
+
+Best Practice as an Arrow Function:
+const setAlarm = (employed, vacation) => employed && !vacation;
+
+
+*/
