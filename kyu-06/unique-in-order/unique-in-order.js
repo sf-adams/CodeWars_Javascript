@@ -1,8 +1,8 @@
 function uniqueInOrder(iterable) {
   const result = [];
-  result.push(iterable[0]);
+  iterable.length >= 1 ? result.push(iterable[0]) : null;
   for (let i = 1; i < iterable.length; i++) {
-    if (iterable[i] != iterable[i - 1]) {
+    if (iterable[i] !== iterable[i - 1]) {
       result.push(iterable[i]);
     }
   }
@@ -10,5 +10,3 @@ function uniqueInOrder(iterable) {
 }
 
 module.exports = uniqueInOrder;
-
-// console.log(uniqueInOrder("AB"));
