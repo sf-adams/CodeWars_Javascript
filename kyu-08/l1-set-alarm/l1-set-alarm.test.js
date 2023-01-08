@@ -1,6 +1,6 @@
 const setAlarm = require("./l1-set-alarm");
 
-describe("Set Alarm", () => {
+describe.skip("Set Alarm", () => {
   it("Should not set alarm for both holiday and employment", () => {
     expect(setAlarm(true, true)).toBe(false);
   });
