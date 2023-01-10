@@ -5,15 +5,18 @@ describe("Testing for Isograms", () => {
     expect(isIsogram("Dermatoglyphics")).toBe(true);
   });
   it("Should work with lower case letters", () => {
-    expect(isIsogram("Dermatoglyphics")).toBe(true);
+    expect(isIsogram("isogram")).toBe(true);
   });
   it("Should work when the same characters are not adjacent", () => {
-    expect(isIsogram("Dermatoglyphics")).toBe(true);
+    expect(isIsogram("aba")).toBe(false);
   });
   it("Should work when same characters are not the same case", () => {
-    expect(isIsogram("Dermatoglyphics")).toBe(true);
+    expect(isIsogram("moOse")).toBe(false);
+  });
+  it("Should work with different case and characters not adjacent", () => {
+    expect(isIsogram("isIsogram")).toBe(false);
   });
   it("Should work with an empty string, as it is a valid isogram", () => {
-    expect(isIsogram("Dermatoglyphics")).toBe(true);
+    expect(isIsogram("")).toBe(true);
   });
 });
