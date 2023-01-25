@@ -1,8 +1,12 @@
 # JavaScript Challenges
 
-Over time, the system for solving these has evolved, and now a TDD approach is used in the form of Jest, so that the tests can be run in VSCode before any need for the tests in CodeWars.
+> _Learning new things about JS by solving one kata each day_
 
-### Conventional Commits
+Over time, the system for solving these has evolved, and now Jest has been added to facilitate a TDD approach. In this way, tests can be run in VSCode before any need for the tests on the site.
+
+Solution files have also been added to dissect some of the _best practices_ or _cleverest_ submissions.
+
+## Conventional Commits
 
 This repository has been used to experiment with the **Conventional Commits** method. As described [here](https://www.conventionalcommits.org/en/v1.0.0/), these are a _specification for adding human and machine readable meaning to commit messages_.
 
